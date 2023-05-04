@@ -120,7 +120,7 @@ img {
   border: none;
 }
 .hero-img {
-  position: absolute;
+  /* position: absolute; */
 }
 /**
   |============================
@@ -128,13 +128,15 @@ img {
   |============================
 */
 .offerings {
-  padding-top: 260px;
-  background-image: url(../images/bg-img/bg-offerings.png);
-  background-repeat: no-repeat;
 }
 .offerings-conteiner {
   display: flex;
   gap: 90px;
+  padding-top: 260px;
+
+  background-image: url(../images/bg-img/bg-offerings.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .offerinhs-side-left {
   margin-bottom: 43px;
@@ -220,6 +222,7 @@ img {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 /**
   |============================
@@ -227,10 +230,13 @@ img {
   |============================
 */
 .customers {
+}
+.customers-conteiner {
+  padding-top: 100px;
   height: 647px;
-  padding: 100px 0;
   background-image: url(../images/bg-img/bg-customers.png);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .customers-title {
   margin-bottom: 20px;
@@ -351,7 +357,6 @@ img {
 
   background-image: url(../images/bg-img/bg-footer.png);
   background-repeat: no-repeat;
-  background-size: ;
   background-position: bottom;
   background-color: #fefefe;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
