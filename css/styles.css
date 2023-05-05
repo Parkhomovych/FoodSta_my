@@ -40,6 +40,7 @@ img {
   line-height: 1.5;
   color: var(--text-colo);
   border-radius: 30px;
+  cursor: pointer;
 }
 .conteiner {
   width: 1280px;
@@ -70,16 +71,31 @@ img {
   gap: 28px;
 }
 .nav-link {
+  padding: 16px 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: var(--text-colo);
+
+  transition: color 250ms linear, text-decoration 250ms linear;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--green-color);
+  text-decoration: underline;
 }
 .nav-btn {
   width: 98px;
   height: 32px;
   background-color: var(--green-color);
   border: none;
+
+  transition: background-color 250ms linear;
+}
+.nav-btn:hover,
+.nav-btn:focus {
+  background-color: var(--main-color);
 }
 /**
   |============================
@@ -118,9 +134,12 @@ img {
   height: 32px;
   background-color: var(--green-color);
   border: none;
+
+  transition: background-color 250ms linear;
 }
-.hero-img {
-  /* position: absolute; */
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--main-color);
 }
 /**
   |============================
@@ -193,6 +212,13 @@ img {
   height: 40px;
   background-color: #fff;
   border: 2px solid #7eb101;
+
+  transition: background-color 250ms linear, border 250ms linear;
+}
+.offerings-btn:hover,
+.offerings-btn:focus {
+  background-color: var(--green-color);
+  border: none;
 }
 /**
   |============================
@@ -229,8 +255,6 @@ img {
   | Customers
   |============================
 */
-.customers {
-}
 .customers-conteiner {
   padding-top: 100px;
   height: 647px;
@@ -290,22 +314,20 @@ img {
   font-size: 14px;
   line-height: 1.5;
 }
-.customers-after::after {
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 52px;
-  height: 0px;
-
-  border: 1px solid #7eb101;
-
-  transform: rotate(90deg) translateY(25px);
+.customers-line {
+  width: 93px;
+  height: 52px;
+  border-right: 1px solid #7eb101;
 }
 /**
   |============================
   | Subscribe
   |============================
 */
+.subscribe {
+  /* position: relative;
+  top: -25px; */
+}
 .subscribe-conteiner {
   display: flex;
 }
@@ -346,6 +368,16 @@ img {
 
   background-color: var(--green-color);
   border: none;
+
+  transition: background-color 250ms linear;
+}
+.subscribe-form-btn:hover,
+.subscribe-form-btn:focus {
+  background-color: var(--main-color);
+}
+.subscribe-img {
+  position: relative;
+  bottom: 75px;
 }
 /**
   |============================
@@ -385,8 +417,15 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
-}
+  color: var(--text-colo);
 
+  transition: color 250ms linear;
+}
+.fotter-nav-link:hover,
+.fotter-nav-link:focus {
+  color: var(--green-color);
+  text-decoration: underline;
+}
 .footer-settings-list {
   display: flex;
   gap: 20px;
@@ -430,6 +469,12 @@ img {
 
   background-color: #fff;
   border: 0.854167px solid #7eb101;
+
+  transition: border 250ms linear;
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  border: 2px solid #ffe450;
 }
 .footer-policy {
   margin-bottom: 80px;
