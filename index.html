@@ -5,16 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodSta</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <!-- JS(hero) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- My styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -48,91 +62,99 @@
             </li>
           </ul>
         </nav>
-        <button class="nav-btn btn" type="button">Order Now</button>
+        <button class="nav-btn btn" type="button" data-modal>Order Now</button>
       </div>
     </header>
     <main>
       <!-- Hero -->
-      <div class="test">
-        <section class="hero">
-          <div class="hero-conteiner conteiner">
-            <div class="hero-side-left">
-              <h1 class="hero-title title">
-                Enjoy Your Favorite Food From Anywhere
-              </h1>
-              <p class="hero-text text">
-                With just a few clicks, you can have your favorite meals
-                delivered straight to your doorstep, no matter where you are.
-                Order now and enjoy a hassle-free and delicious meal from the
-                comfort of your own home.
-              </p>
-              <button class="hero-btn btn" type="button">Order Now</button>
-            </div>
+      <section class="hero">
+        <div class="hero-conteiner conteiner">
+          <div class="hero-side-left">
+            <h1 class="hero-title title">
+              Enjoy Your Favorite Food From Anywhere
+            </h1>
+            <p class="hero-text text">
+              With just a few clicks, you can have your favorite meals delivered
+              straight to your doorstep, no matter where you are. Order now and
+              enjoy a hassle-free and delicious meal from the comfort of your
+              own home.
+            </p>
+            <button class="hero-btn btn" type="button">Order Now</button>
+          </div>
+          <div>
             <div class="hero-side-right">
               <img
-                class="hero-img"
-                src="./images/contetn-img/hero-one.jpg"
-                alt="Food"
-                width="528"
-                height="528"
+                src="./images/contetn-img/Ellipse-hero.png"
+                alt=""
+                class="ecllipse-img"
+                width="580"
+                height="580"
               />
+              <div class="">
+                <img
+                  class="hero-img"
+                  src="./images/contetn-img/hero-one.png"
+                  alt="Food"
+                  width="528"
+                  height="528"
+                />
+              </div>
             </div>
           </div>
-        </section>
-        <!-- Offerings -->
-        <section class="offerings">
-          <div class="offerings-conteiner conteiner">
-            <div class="offerinhs-side-left">
-              <img
-                class="offerings-img"
-                src="./images/contetn-img/apple-1.png"
-                alt="apple"
-                width="396"
-                height="502"
-              />
-            </div>
-            <div class="offerings-side-right">
-              <h2 class="offerings-title title">
-                What’s Special About Our Offerings
-              </h2>
-              <p class="offerings-text">
-                With our platform, you can browse through a diverse selection of
-                cuisines and local restaurants, and choose from a variety of
-                dishes that cater to your specific taste buds.
-              </p>
-              <ul class="offerings-list list">
-                <li class="offerings-item item">
-                  <span class="offerings-bg-svg">
-                    <svg class="offerings-svg" width="32" height="32">
-                      <use href="./images/icons.svg#rocket"></use>
-                    </svg>
-                  </span>
-                  <h3 class="offerings-subtitle">Fasest Delivery</h3>
-                  <p class="offerings-subtext">
-                    Our advanced logistics system and dedicated delivery
-                    partners ensure that your meals are delivered to you within
-                    30-minutes.
-                  </p>
-                </li>
-                <li class="offerings-item item">
-                  <span class="offerings-bg-svg">
-                    <svg class="offerings-svg" width="32" height="32">
-                      <use href="./images/icons.svg#touch"></use>
-                    </svg>
-                  </span>
-                  <h3 class="offerings-subtitle">Easy To Order</h3>
-                  <p class="offerings-subtext">
-                    You can browse through a wide variety of cuisines and
-                    restaurants, select your favorite meals, and place your
-                    order in just a few clicks.
-                  </p>
-                </li>
-              </ul>
-              <button class="offerings-btn btn" type="button">Order Now</button>
-            </div>
+        </div>
+      </section>
+      <!-- Offerings -->
+      <section class="offerings">
+        <div class="offerings-conteiner conteiner">
+          <div class="offerinhs-side-left">
+            <img
+              class="offerings-img"
+              src="./images/contetn-img/apple.png"
+              alt="apple"
+              width="550"
+              height="604"
+            />
           </div>
-        </section>
-      </div>
+          <div class="offerings-side-right">
+            <h2 class="offerings-title title">
+              What’s Special About Our Offerings
+            </h2>
+            <p class="offerings-text">
+              With our platform, you can browse through a diverse selection of
+              cuisines and local restaurants, and choose from a variety of
+              dishes that cater to your specific taste buds.
+            </p>
+            <ul class="offerings-list list">
+              <li class="offerings-item item">
+                <span class="offerings-bg-svg">
+                  <svg class="offerings-svg" width="32" height="32">
+                    <use href="./images/icons.svg#rocket"></use>
+                  </svg>
+                </span>
+                <h3 class="offerings-subtitle">Fasest Delivery</h3>
+                <p class="offerings-subtext">
+                  Our advanced logistics system and dedicated delivery partners
+                  ensure that your meals are delivered to you within 30-minutes.
+                </p>
+              </li>
+              <li class="offerings-item item">
+                <span class="offerings-bg-svg">
+                  <svg class="offerings-svg" width="32" height="32">
+                    <use href="./images/icons.svg#touch"></use>
+                  </svg>
+                </span>
+                <h3 class="offerings-subtitle">Easy To Order</h3>
+                <p class="offerings-subtext">
+                  You can browse through a wide variety of cuisines and
+                  restaurants, select your favorite meals, and place your order
+                  in just a few clicks.
+                </p>
+              </li>
+            </ul>
+            <button class="offerings-btn btn" type="button">Order Now</button>
+          </div>
+        </div>
+      </section>
       <!-- Favorites -->
       <section class="favorites">
         <div class="conteiner">
@@ -142,7 +164,7 @@
             <li class="favorites-item">
               <img
                 class="favorites-img"
-                src="./images/contetn-img/gamburger.jpg"
+                src="./images/contetn-img/borshch.png"
                 alt="gamburger"
                 width="315"
                 height="315"
@@ -151,7 +173,7 @@
             <li class="favorites-item">
               <img
                 class="favorites-img"
-                src="./images/contetn-img/Pasta.jpg"
+                src="./images/contetn-img/Pasta.png"
                 alt="Pasta"
                 width="315"
                 height="315"
@@ -160,7 +182,7 @@
             <li class="favorites-item">
               <img
                 class="favorites-img"
-                src="./images/contetn-img/pizza.jpg"
+                src="./images/contetn-img/pizza.png"
                 alt="pizza"
                 width="315"
                 height="315"
@@ -169,7 +191,7 @@
             <li class="favorites-item">
               <img
                 class="favorites-img"
-                src="./images/contetn-img/chicken.jpg"
+                src="./images/contetn-img/chicken.png"
                 alt="chicken"
                 width="315"
                 height="315"
@@ -178,7 +200,7 @@
             <li class="favorites-item">
               <img
                 class="favorites-img"
-                src="./images/contetn-img/salat.jpg"
+                src="./images/contetn-img/salat.png"
                 alt="salat"
                 width="315"
                 height="315"
@@ -187,7 +209,7 @@
             <li class="favorites-item">
               <img
                 class="favorites-img"
-                src="./images/contetn-img/borshch.jpg"
+                src="./images/contetn-img/borshch.png"
                 alt="borshch"
                 width="315"
                 height="315"
@@ -346,5 +368,19 @@
         </div>
       </div>
     </footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/hero-img.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
